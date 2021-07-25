@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
 if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EliYBA") then
 	game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
 end
