@@ -14,6 +14,7 @@ local ArrowButton = Instance.new("TextButton")
 local WorthyButton = Instance.new("TextButton")
 local DesTroyGui = Instance.new("TextButton")
 local InvisButton = Instance.new("TextButton")
+local taberboi = Instance.new("TextLabel")
 
 --Properties:
 
@@ -140,12 +141,26 @@ InvisButton.TextScaled = true
 InvisButton.TextSize = 14.000
 InvisButton.TextWrapped = true
 
+taberboi.Name = "taberboi"
+taberboi.Parent = MainFrame
+taberboi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+taberboi.BackgroundTransparency = 1.000
+taberboi.Position = UDim2.new(0.820627809, 0, 0.0153605146, 0)
+taberboi.Size = UDim2.new(0, 70, 0, 25)
+taberboi.Font = Enum.Font.SourceSans
+taberboi.Text = "Tab: Main"
+taberboi.TextColor3 = Color3.fromRGB(255, 255, 255)
+taberboi.TextScaled = true
+taberboi.TextSize = 14.000
+taberboi.TextWrapped = true
+
 -- Scripts:
 
-local function YIWOTUF_fake_script() -- ExtraTabButton.Script 
+local function MNBNA_fake_script() -- ExtraTabButton.Script 
 	local script = Instance.new('Script', ExtraTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
+	local text = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame.taberboi.Text
 	script.Parent.MouseButton1Click:Connect(function()
 		gui.DesTroyGui.Visible = true
 		gui.RokaButton.Visible = false
@@ -153,23 +168,26 @@ local function YIWOTUF_fake_script() -- ExtraTabButton.Script
 		gui.WorthyButton.Visible = false
 		gui.InvisButton.Visible = true
 		gui.RefreshButton.Visible = true
+		text = "Tab: Extra"
 	end)
 end
-coroutine.wrap(YIWOTUF_fake_script)()
-local function KKOZ_fake_script() -- MainTabButton.Script 
+coroutine.wrap(MNBNA_fake_script)()
+local function JCEJDSK_fake_script() -- MainTabButton.Script 
 	local script = Instance.new('Script', MainTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
+	local text = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame.taberboi.Text
 	script.Parent.MouseButton1Click:Connect(function()
 		gui.DesTroyGui.Visible = false
 		gui.RokaButton.Visible = true
 		gui.ArrowButton.Visible = true
 		gui.WorthyButton.Visible = true
 		gui.InvisButton.Visible = false
+		text = "Tab: Main"
 	end)
 end
-coroutine.wrap(KKOZ_fake_script)()
-local function ZETCP_fake_script() -- RokaButton.Script 
+coroutine.wrap(JCEJDSK_fake_script)()
+local function ZFENWB_fake_script() -- RokaButton.Script 
 	local script = Instance.new('Script', RokaButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -188,8 +206,8 @@ local function ZETCP_fake_script() -- RokaButton.Script
 	
 	end)
 end
-coroutine.wrap(ZETCP_fake_script)()
-local function WHFAV_fake_script() -- ArrowButton.Script 
+coroutine.wrap(ZFENWB_fake_script)()
+local function FGOKYRM_fake_script() -- ArrowButton.Script 
 	local script = Instance.new('Script', ArrowButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -208,8 +226,8 @@ local function WHFAV_fake_script() -- ArrowButton.Script
 	
 	end)
 end
-coroutine.wrap(WHFAV_fake_script)()
-local function ANASR_fake_script() -- WorthyButton.Script 
+coroutine.wrap(FGOKYRM_fake_script)()
+local function AFCP_fake_script() -- WorthyButton.Script 
 	local script = Instance.new('Script', WorthyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -275,25 +293,25 @@ local function ANASR_fake_script() -- WorthyButton.Script
 	
 	end)
 end
-coroutine.wrap(ANASR_fake_script)()
-local function KOKL_fake_script() -- DesTroyGui.Script 
+coroutine.wrap(AFCP_fake_script)()
+local function VPZKMB_fake_script() -- DesTroyGui.Script 
 	local script = Instance.new('Script', DesTroyGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
 	end)
 end
-coroutine.wrap(KOKL_fake_script)()
+coroutine.wrap(VPZKMB_fake_script)()
 -- MainFrame.Script is disabled.
-local function IINBRVR_fake_script() -- InvisButton.Script 
+local function IRIRZT_fake_script() -- InvisButton.Script 
 	local script = Instance.new('Script', InvisButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.StandMorph.LowerTorso:Destroy()
 	end)
 end
-coroutine.wrap(IINBRVR_fake_script)()
-local function KULJL_fake_script() -- MainFrame.Script 
+coroutine.wrap(IRIRZT_fake_script)()
+local function NOHPLW_fake_script() -- MainFrame.Script 
 	local script = Instance.new('Script', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -334,4 +352,4 @@ local function KULJL_fake_script() -- MainFrame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(KULJL_fake_script)()
+coroutine.wrap(NOHPLW_fake_script)()
