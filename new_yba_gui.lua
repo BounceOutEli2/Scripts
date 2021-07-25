@@ -1,10 +1,10 @@
-if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EliYBA") then
-	game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
-end
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EliYBA") then
+	game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
+end
 
 local EliYBA = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -17,6 +17,7 @@ local ArrowButton = Instance.new("TextButton")
 local WorthyButton = Instance.new("TextButton")
 local DesTroyGui = Instance.new("TextButton")
 local InvisButton = Instance.new("TextButton")
+local RefreshButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -143,9 +144,23 @@ InvisButton.TextScaled = true
 InvisButton.TextSize = 14.000
 InvisButton.TextWrapped = true
 
+RefreshButton.Name = "RefreshButton"
+RefreshButton.Parent = MainFrame
+RefreshButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+RefreshButton.BorderSizePixel = 0
+RefreshButton.Position = UDim2.new(0.726457417, 0, 0.127340809, 0)
+RefreshButton.Size = UDim2.new(0, 112, 0, 33)
+RefreshButton.Visible = false
+RefreshButton.Font = Enum.Font.SourceSans
+RefreshButton.Text = "Refresh gui"
+RefreshButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RefreshButton.TextScaled = true
+RefreshButton.TextSize = 14.000
+RefreshButton.TextWrapped = true
+
 -- Scripts:
 
-local function NTPLP_fake_script() -- ExtraTabButton.Script 
+local function HOGW_fake_script() -- ExtraTabButton.Script 
 	local script = Instance.new('Script', ExtraTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
@@ -155,10 +170,11 @@ local function NTPLP_fake_script() -- ExtraTabButton.Script
 		gui.ArrowButton.Visible = false
 		gui.WorthyButton.Visible = false
 		gui.InvisButton.Visible = true
+		gui.RefreshButton.Visible = true
 	end)
 end
-coroutine.wrap(NTPLP_fake_script)()
-local function JNXW_fake_script() -- MainTabButton.Script 
+coroutine.wrap(HOGW_fake_script)()
+local function UXUVYH_fake_script() -- MainTabButton.Script 
 	local script = Instance.new('Script', MainTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
@@ -170,8 +186,8 @@ local function JNXW_fake_script() -- MainTabButton.Script
 		gui.InvisButton.Visible = false
 	end)
 end
-coroutine.wrap(JNXW_fake_script)()
-local function UANIFQ_fake_script() -- RokaButton.Script 
+coroutine.wrap(UXUVYH_fake_script)()
+local function YZOBZW_fake_script() -- RokaButton.Script 
 	local script = Instance.new('Script', RokaButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -190,8 +206,8 @@ local function UANIFQ_fake_script() -- RokaButton.Script
 	
 	end)
 end
-coroutine.wrap(UANIFQ_fake_script)()
-local function EWZKU_fake_script() -- ArrowButton.Script 
+coroutine.wrap(YZOBZW_fake_script)()
+local function IGZDFLK_fake_script() -- ArrowButton.Script 
 	local script = Instance.new('Script', ArrowButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -210,8 +226,8 @@ local function EWZKU_fake_script() -- ArrowButton.Script
 	
 	end)
 end
-coroutine.wrap(EWZKU_fake_script)()
-local function UCRCFMK_fake_script() -- WorthyButton.Script 
+coroutine.wrap(IGZDFLK_fake_script)()
+local function NQGDOJW_fake_script() -- WorthyButton.Script 
 	local script = Instance.new('Script', WorthyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -277,25 +293,25 @@ local function UCRCFMK_fake_script() -- WorthyButton.Script
 	
 	end)
 end
-coroutine.wrap(UCRCFMK_fake_script)()
-local function WEVXPF_fake_script() -- DesTroyGui.Script 
+coroutine.wrap(NQGDOJW_fake_script)()
+local function ZLNU_fake_script() -- DesTroyGui.Script 
 	local script = Instance.new('Script', DesTroyGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
 	end)
 end
-coroutine.wrap(WEVXPF_fake_script)()
+coroutine.wrap(ZLNU_fake_script)()
 -- MainFrame.Script is disabled.
-local function JQJFQM_fake_script() -- InvisButton.Script 
+local function YWFTJWZ_fake_script() -- InvisButton.Script 
 	local script = Instance.new('Script', InvisButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.StandMorph.LowerTorso:Destroy()
 	end)
 end
-coroutine.wrap(JQJFQM_fake_script)()
-local function MEUI_fake_script() -- MainFrame.Script 
+coroutine.wrap(YWFTJWZ_fake_script)()
+local function HGCDF_fake_script() -- MainFrame.Script 
 	local script = Instance.new('Script', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -336,4 +352,12 @@ local function MEUI_fake_script() -- MainFrame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(MEUI_fake_script)()
+coroutine.wrap(HGCDF_fake_script)()
+local function PLUIA_fake_script() -- RefreshButton.Script 
+	local script = Instance.new('Script', RefreshButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BounceOutEli2/Scripts/main/new_yba_gui.lua'))()
+	end)
+end
+coroutine.wrap(PLUIA_fake_script)()
