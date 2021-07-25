@@ -1,3 +1,6 @@
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EliYBA") then
+	game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
+end
 -- Gui to Lua
 -- Version: 3.2
 
@@ -142,7 +145,7 @@ InvisButton.TextWrapped = true
 
 -- Scripts:
 
-local function KMVX_fake_script() -- ExtraTabButton.Script 
+local function NTPLP_fake_script() -- ExtraTabButton.Script 
 	local script = Instance.new('Script', ExtraTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
@@ -154,8 +157,8 @@ local function KMVX_fake_script() -- ExtraTabButton.Script
 		gui.InvisButton.Visible = true
 	end)
 end
-coroutine.wrap(KMVX_fake_script)()
-local function ZRJQX_fake_script() -- MainTabButton.Script 
+coroutine.wrap(NTPLP_fake_script)()
+local function JNXW_fake_script() -- MainTabButton.Script 
 	local script = Instance.new('Script', MainTabButton)
 
 	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
@@ -167,8 +170,8 @@ local function ZRJQX_fake_script() -- MainTabButton.Script
 		gui.InvisButton.Visible = false
 	end)
 end
-coroutine.wrap(ZRJQX_fake_script)()
-local function IFWTBY_fake_script() -- RokaButton.Script 
+coroutine.wrap(JNXW_fake_script)()
+local function UANIFQ_fake_script() -- RokaButton.Script 
 	local script = Instance.new('Script', RokaButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -187,8 +190,8 @@ local function IFWTBY_fake_script() -- RokaButton.Script
 	
 	end)
 end
-coroutine.wrap(IFWTBY_fake_script)()
-local function WQIV_fake_script() -- ArrowButton.Script 
+coroutine.wrap(UANIFQ_fake_script)()
+local function EWZKU_fake_script() -- ArrowButton.Script 
 	local script = Instance.new('Script', ArrowButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -207,8 +210,8 @@ local function WQIV_fake_script() -- ArrowButton.Script
 	
 	end)
 end
-coroutine.wrap(WQIV_fake_script)()
-local function OVGE_fake_script() -- WorthyButton.Script 
+coroutine.wrap(EWZKU_fake_script)()
+local function UCRCFMK_fake_script() -- WorthyButton.Script 
 	local script = Instance.new('Script', WorthyButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -274,31 +277,31 @@ local function OVGE_fake_script() -- WorthyButton.Script
 	
 	end)
 end
-coroutine.wrap(OVGE_fake_script)()
-local function RVEY_fake_script() -- DesTroyGui.Script 
+coroutine.wrap(UCRCFMK_fake_script)()
+local function WEVXPF_fake_script() -- DesTroyGui.Script 
 	local script = Instance.new('Script', DesTroyGui)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
 	end)
 end
-coroutine.wrap(RVEY_fake_script)()
+coroutine.wrap(WEVXPF_fake_script)()
 -- MainFrame.Script is disabled.
-local function LHGY_fake_script() -- InvisButton.Script 
+local function JQJFQM_fake_script() -- InvisButton.Script 
 	local script = Instance.new('Script', InvisButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.StandMorph.LowerTorso:Destroy()
 	end)
 end
-coroutine.wrap(LHGY_fake_script)()
-local function KNUM_fake_script() -- MainFrame.Script 
+coroutine.wrap(JQJFQM_fake_script)()
+local function MEUI_fake_script() -- MainFrame.Script 
 	local script = Instance.new('Script', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
 		dragToggle = nil
-		local dragSpeed = 1
+		local dragSpeed = 0
 		dragInput = nil
 		dragStart = nil
 		local dragPos = nil
@@ -333,4 +336,4 @@ local function KNUM_fake_script() -- MainFrame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(KNUM_fake_script)()
+coroutine.wrap(MEUI_fake_script)()
