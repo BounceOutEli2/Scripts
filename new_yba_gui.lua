@@ -375,7 +375,7 @@ local function YGMKN_fake_script() -- Frame.Script
 	
 	dragify(script.Parent)
 	end
-end
+
 coroutine.wrap(YGMKN_fake_script)()
 local function URVONOE_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
