@@ -3,193 +3,210 @@
 
 -- Instances:
 
-local EliYBA = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local Tabs = Instance.new("Frame")
-local ExtraTabButton = Instance.new("TextButton")
-local MainTabButton = Instance.new("TextButton")
-local RokaButton = Instance.new("TextButton")
+local EliYba = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Main = Instance.new("ScrollingFrame")
+local RokaFruit = Instance.new("TextButton")
+local Arrow = Instance.new("TextButton")
+local worthy = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
-local ArrowButton = Instance.new("TextButton")
-local WorthyButton = Instance.new("TextButton")
-local DesTroyGui = Instance.new("TextButton")
-local InvisButton = Instance.new("TextButton")
-local taberboi = Instance.new("TextLabel")
+local Extra = Instance.new("ScrollingFrame")
+local RokaFruit_2 = Instance.new("TextButton")
+local Reset = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Reset_2 = Instance.new("TextButton")
+local TopBar = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local SideBar = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 
 --Properties:
 
-EliYBA.Name = "EliYBA"
-EliYBA.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-EliYBA.ResetOnSpawn = false
+EliYba.Name = "EliYba"
+EliYba.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+EliYba.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+EliYba.ResetOnSpawn = false
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = EliYBA
-MainFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-MainFrame.BorderColor3 = Color3.fromRGB(4, 4, 4)
-MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.404320985, 0, 0.426993847, 0)
-MainFrame.Size = UDim2.new(0, 446, 0, 267)
+Frame.Parent = EliYba
+Frame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Frame.Position = UDim2.new(0.376543224, 0, 0.325652838, 0)
+Frame.Size = UDim2.new(0, 460, 0, 285)
 
-Tabs.Name = "Tabs"
-Tabs.Parent = MainFrame
-Tabs.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
-Tabs.BorderSizePixel = 0
-Tabs.Size = UDim2.new(0, 54, 0, 267)
+Main.Name = "Main"
+Main.Parent = Frame
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.100000001, 0, 0.129824564, 0)
+Main.Size = UDim2.new(0, 414, 0, 248)
 
-ExtraTabButton.Name = "ExtraTabButton"
-ExtraTabButton.Parent = Tabs
-ExtraTabButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-ExtraTabButton.BorderSizePixel = 0
-ExtraTabButton.Position = UDim2.new(0, 0, 0.194709182, 0)
-ExtraTabButton.Size = UDim2.new(0, 54, 0, 33)
-ExtraTabButton.Font = Enum.Font.SourceSans
-ExtraTabButton.Text = "Extra"
-ExtraTabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ExtraTabButton.TextScaled = true
-ExtraTabButton.TextSize = 14.000
-ExtraTabButton.TextWrapped = true
+RokaFruit.Name = "RokaFruit"
+RokaFruit.Parent = Main
+RokaFruit.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+RokaFruit.BorderSizePixel = 0
+RokaFruit.Position = UDim2.new(0.0410628021, 0, 0.0109740663, 0)
+RokaFruit.Size = UDim2.new(0, 82, 0, 41)
+RokaFruit.Font = Enum.Font.SourceSans
+RokaFruit.Text = "Instant use roka"
+RokaFruit.TextColor3 = Color3.fromRGB(255, 255, 255)
+RokaFruit.TextScaled = true
+RokaFruit.TextSize = 14.000
+RokaFruit.TextWrapped = true
 
-MainTabButton.Name = "MainTabButton"
-MainTabButton.Parent = Tabs
-MainTabButton.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-MainTabButton.BorderSizePixel = 0
-MainTabButton.Position = UDim2.new(0, 0, 0.0153605491, 0)
-MainTabButton.Size = UDim2.new(0, 54, 0, 33)
-MainTabButton.Font = Enum.Font.SourceSans
-MainTabButton.Text = "Main"
-MainTabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-MainTabButton.TextScaled = true
-MainTabButton.TextSize = 14.000
-MainTabButton.TextWrapped = true
+Arrow.Name = "Arrow"
+Arrow.Parent = Main
+Arrow.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Arrow.BorderSizePixel = 0
+Arrow.Position = UDim2.new(0.270531416, 0, 0.0101301614, 0)
+Arrow.Size = UDim2.new(0, 82, 0, 41)
+Arrow.Font = Enum.Font.SourceSans
+Arrow.Text = "Instant use arrow"
+Arrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arrow.TextScaled = true
+Arrow.TextSize = 14.000
+Arrow.TextWrapped = true
 
-RokaButton.Name = "RokaButton"
-RokaButton.Parent = MainFrame
-RokaButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-RokaButton.BorderSizePixel = 0
-RokaButton.Position = UDim2.new(0.143497765, 0, 0.127340809, 0)
-RokaButton.Size = UDim2.new(0, 112, 0, 33)
-RokaButton.Font = Enum.Font.SourceSans
-RokaButton.Text = "Use roka fruit (instant)"
-RokaButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-RokaButton.TextScaled = true
-RokaButton.TextSize = 14.000
-RokaButton.TextWrapped = true
+worthy.Name = "worthy"
+worthy.Parent = Main
+worthy.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+worthy.BorderSizePixel = 0
+worthy.Position = UDim2.new(0.504830956, 0, 0.0101301614, 0)
+worthy.Size = UDim2.new(0, 82, 0, 41)
+worthy.Font = Enum.Font.SourceSans
+worthy.Text = "Instant 2 worthy"
+worthy.TextColor3 = Color3.fromRGB(255, 255, 255)
+worthy.TextScaled = true
+worthy.TextSize = 14.000
+worthy.TextWrapped = true
 
-TextLabel.Parent = MainFrame
+TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.28699553, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 189, 0, 30)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Elis yba script"
+TextLabel.Position = UDim2.new(-0.0024154596, 0, 0.115604773, 0)
+TextLabel.Size = UDim2.new(0, 402, 0, 50)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "More coming soon!"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-ArrowButton.Name = "ArrowButton"
-ArrowButton.Parent = MainFrame
-ArrowButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-ArrowButton.BorderSizePixel = 0
-ArrowButton.Position = UDim2.new(0.437219739, 0, 0.127340809, 0)
-ArrowButton.Size = UDim2.new(0, 112, 0, 33)
-ArrowButton.Font = Enum.Font.SourceSans
-ArrowButton.Text = "Use Arrow (instant)"
-ArrowButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ArrowButton.TextScaled = true
-ArrowButton.TextSize = 14.000
-ArrowButton.TextWrapped = true
+Extra.Name = "Extra"
+Extra.Parent = Frame
+Extra.Active = true
+Extra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Extra.BackgroundTransparency = 1.000
+Extra.Position = UDim2.new(0.100000001, 0, 0.129824564, 0)
+Extra.Size = UDim2.new(0, 414, 0, 248)
+Extra.Visible = false
 
-WorthyButton.Name = "WorthyButton"
-WorthyButton.Parent = MainFrame
-WorthyButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-WorthyButton.BorderSizePixel = 0
-WorthyButton.Position = UDim2.new(0.726457417, 0, 0.127340809, 0)
-WorthyButton.Size = UDim2.new(0, 112, 0, 33)
-WorthyButton.Font = Enum.Font.SourceSans
-WorthyButton.Text = "Get worthyness 2 (ez tw)"
-WorthyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-WorthyButton.TextScaled = true
-WorthyButton.TextSize = 14.000
-WorthyButton.TextWrapped = true
+RokaFruit_2.Name = "RokaFruit"
+RokaFruit_2.Parent = Extra
+RokaFruit_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+RokaFruit_2.BorderSizePixel = 0
+RokaFruit_2.Position = UDim2.new(0.0410628021, 0, 0.00837577507, 0)
+RokaFruit_2.Size = UDim2.new(0, 82, 0, 41)
+RokaFruit_2.Font = Enum.Font.SourceSans
+RokaFruit_2.Text = "Destroy gui"
+RokaFruit_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+RokaFruit_2.TextScaled = true
+RokaFruit_2.TextSize = 14.000
+RokaFruit_2.TextWrapped = true
 
-DesTroyGui.Name = "DesTroyGui"
-DesTroyGui.Parent = MainFrame
-DesTroyGui.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-DesTroyGui.BorderSizePixel = 0
-DesTroyGui.Position = UDim2.new(0.143497765, 0, 0.127340809, 0)
-DesTroyGui.Size = UDim2.new(0, 112, 0, 33)
-DesTroyGui.Visible = false
-DesTroyGui.Font = Enum.Font.SourceSans
-DesTroyGui.Text = "Destroy GUI"
-DesTroyGui.TextColor3 = Color3.fromRGB(255, 0, 0)
-DesTroyGui.TextScaled = true
-DesTroyGui.TextSize = 14.000
-DesTroyGui.TextWrapped = true
+Reset.Name = "Reset"
+Reset.Parent = Extra
+Reset.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Reset.BorderSizePixel = 0
+Reset.Position = UDim2.new(0.270531356, 0, 0.00662138872, 0)
+Reset.Size = UDim2.new(0, 82, 0, 41)
+Reset.Font = Enum.Font.SourceSans
+Reset.Text = "Reset"
+Reset.TextColor3 = Color3.fromRGB(255, 0, 0)
+Reset.TextScaled = true
+Reset.TextSize = 14.000
+Reset.TextWrapped = true
 
-InvisButton.Name = "InvisButton"
-InvisButton.Parent = MainFrame
-InvisButton.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-InvisButton.BorderSizePixel = 0
-InvisButton.Position = UDim2.new(0.437219739, 0, 0.127340809, 0)
-InvisButton.Size = UDim2.new(0, 112, 0, 33)
-InvisButton.Visible = false
-InvisButton.Font = Enum.Font.SourceSans
-InvisButton.Text = "Ivis stand"
-InvisButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-InvisButton.TextScaled = true
-InvisButton.TextSize = 14.000
-InvisButton.TextWrapped = true
+TextLabel_2.Parent = Extra
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0024154596, 0, 0.115604758, 0)
+TextLabel_2.Size = UDim2.new(0, 402, 0, 50)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "More coming soon!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
-taberboi.Name = "taberboi"
-taberboi.Parent = MainFrame
-taberboi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-taberboi.BackgroundTransparency = 1.000
-taberboi.Position = UDim2.new(0.820627809, 0, 0.0153605146, 0)
-taberboi.Size = UDim2.new(0, 70, 0, 25)
-taberboi.Font = Enum.Font.SourceSans
-taberboi.Text = "Tab: Main"
-taberboi.TextColor3 = Color3.fromRGB(255, 255, 255)
-taberboi.TextScaled = true
-taberboi.TextSize = 14.000
-taberboi.TextWrapped = true
+Reset_2.Name = "Reset"
+Reset_2.Parent = Extra
+Reset_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Reset_2.BorderSizePixel = 0
+Reset_2.Position = UDim2.new(0.526569963, 0, 0.00837577507, 0)
+Reset_2.Size = UDim2.new(0, 82, 0, 41)
+Reset_2.Font = Enum.Font.SourceSans
+Reset_2.Text = "Invis stand"
+Reset_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reset_2.TextScaled = true
+Reset_2.TextSize = 14.000
+Reset_2.TextWrapped = true
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Frame
+TopBar.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+TopBar.Position = UDim2.new(-0.000912517309, 0, -0.00263562799, 0)
+TopBar.Size = UDim2.new(0, 460, 0, 37)
+
+TextLabel_3.Parent = TopBar
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(0, 460, 0, 37)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "EliYba"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Frame
+SideBar.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+SideBar.Position = UDim2.new(-0.000912517309, 0, 0.124375463, 0)
+SideBar.Size = UDim2.new(0, 46, 0, 248)
+
+TextButton.Parent = SideBar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.185483873, 0)
+TextButton.Size = UDim2.new(0, 46, 0, 22)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Extra"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = SideBar
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0, 0, 0.0322580636, 0)
+TextButton_2.Size = UDim2.new(0, 46, 0, 22)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Main"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
 
 -- Scripts:
 
-local function MNBNA_fake_script() -- ExtraTabButton.Script 
-	local script = Instance.new('Script', ExtraTabButton)
+local function WPEPUW_fake_script() -- RokaFruit.Script 
+	local script = Instance.new('Script', RokaFruit)
 
-	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
-	local text = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame.taberboi.Text
-	script.Parent.MouseButton1Click:Connect(function()
-		gui.DesTroyGui.Visible = true
-		gui.RokaButton.Visible = false
-		gui.ArrowButton.Visible = false
-		gui.WorthyButton.Visible = false
-		gui.InvisButton.Visible = true
-		gui.RefreshButton.Visible = true
-		text = "Tab: Extra"
-	end)
-end
-coroutine.wrap(MNBNA_fake_script)()
-local function JCEJDSK_fake_script() -- MainTabButton.Script 
-	local script = Instance.new('Script', MainTabButton)
-
-	local gui = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame
-	local text = game.Players.LocalPlayer.PlayerGui.EliYBA.MainFrame.taberboi.Text
-	script.Parent.MouseButton1Click:Connect(function()
-		gui.DesTroyGui.Visible = false
-		gui.RokaButton.Visible = true
-		gui.ArrowButton.Visible = true
-		gui.WorthyButton.Visible = true
-		gui.InvisButton.Visible = false
-		text = "Tab: Main"
-	end)
-end
-coroutine.wrap(JCEJDSK_fake_script)()
-local function ZFENWB_fake_script() -- RokaButton.Script 
-	local script = Instance.new('Script', RokaButton)
-
+	
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Script generated by SimpleSpy - credits to exx#9394
 	
@@ -206,9 +223,9 @@ local function ZFENWB_fake_script() -- RokaButton.Script
 	
 	end)
 end
-coroutine.wrap(ZFENWB_fake_script)()
-local function FGOKYRM_fake_script() -- ArrowButton.Script 
-	local script = Instance.new('Script', ArrowButton)
+coroutine.wrap(WPEPUW_fake_script)()
+local function CZZZXPP_fake_script() -- Arrow.Script 
+	local script = Instance.new('Script', Arrow)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Script generated by SimpleSpy - credits to exx#9394
@@ -226,9 +243,9 @@ local function FGOKYRM_fake_script() -- ArrowButton.Script
 	
 	end)
 end
-coroutine.wrap(FGOKYRM_fake_script)()
-local function AFCP_fake_script() -- WorthyButton.Script 
-	local script = Instance.new('Script', WorthyButton)
+coroutine.wrap(CZZZXPP_fake_script)()
+local function TNBIJ_fake_script() -- worthy.Script 
+	local script = Instance.new('Script', worthy)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		-- Script generated by SimpleSpy - credits to exx#9394
@@ -290,29 +307,35 @@ local function AFCP_fake_script() -- WorthyButton.Script
 		}
 	
 		game:GetService("Players").LocalPlayer.Character.RemoteFunction:InvokeServer(unpack(args))
-	
 	end)
 end
-coroutine.wrap(AFCP_fake_script)()
-local function VPZKMB_fake_script() -- DesTroyGui.Script 
-	local script = Instance.new('Script', DesTroyGui)
+coroutine.wrap(TNBIJ_fake_script)()
+local function QWRF_fake_script() -- RokaFruit_2.Script 
+	local script = Instance.new('Script', RokaFruit_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.PlayerGui.EliYBA:Destroy()
+		game.Players.LocalPlayer.PlayerGui.EliYba:Destroy()
 	end)
 end
-coroutine.wrap(VPZKMB_fake_script)()
--- MainFrame.Script is disabled.
-local function IRIRZT_fake_script() -- InvisButton.Script 
-	local script = Instance.new('Script', InvisButton)
+coroutine.wrap(QWRF_fake_script)()
+local function WOGF_fake_script() -- Reset.Script 
+	local script = Instance.new('Script', Reset)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Head:Destroy()
+	end)
+end
+coroutine.wrap(WOGF_fake_script)()
+local function DUYOEL_fake_script() -- Reset_2.Script 
+	local script = Instance.new('Script', Reset_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.StandMorph.LowerTorso:Destroy()
 	end)
 end
-coroutine.wrap(IRIRZT_fake_script)()
-local function NOHPLW_fake_script() -- MainFrame.Script 
-	local script = Instance.new('Script', MainFrame)
+coroutine.wrap(DUYOEL_fake_script)()
+local function YGMKN_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
 
 	local UIS = game:GetService("UserInputService")
 	function dragify(Frame)
@@ -351,5 +374,27 @@ local function NOHPLW_fake_script() -- MainFrame.Script
 	end
 	
 	dragify(script.Parent)
+	end
 end
-coroutine.wrap(NOHPLW_fake_script)()
+coroutine.wrap(YGMKN_fake_script)()
+local function URVONOE_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	local gui = game.Players.LocalPlayer.PlayerGui.EliYba.Frame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		gui.Main.Visible = false
+		gui.Extra.Visible = true
+	end)
+end
+coroutine.wrap(URVONOE_fake_script)()
+local function CNIT_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	local gui = game.Players.LocalPlayer.PlayerGui.EliYba.Frame
+	script.Parent.MouseButton1Click:Connect(function()
+		gui.Main.Visible = true
+		gui.Extra.Visible = false
+	end)
+end
+coroutine.wrap(CNIT_fake_script)()
