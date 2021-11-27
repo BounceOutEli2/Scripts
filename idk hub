@@ -32,6 +32,40 @@ Idk_hubEliRemake.Name = "Idk_hub.EliRemake"
 Idk_hubEliRemake.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Idk_hubEliRemake.ResetOnSpawn = false
 
+Frame.Parent = Idk_hubEliRemake-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Idk_hubEliRemake = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Main = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Tabs = Instance.new("Frame")
+local Main_2 = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local Tools = Instance.new("TextButton")
+local Tools_2 = Instance.new("ScrollingFrame")
+local Nimbus = Instance.new("TextButton")
+local DragonGb = Instance.new("TextButton")
+local Noslow = Instance.new("TextButton")
+local FB = Instance.new("TextButton")
+local Toprespawn = Instance.new("TextButton")
+local Slotmenu = Instance.new("TextButton")
+local Majin = Instance.new("TextButton")
+local Teleports_2 = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local MainTabs = Instance.new("ScrollingFrame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+Idk_hubEliRemake.Name = "Idk_hub.EliRemake"
+Idk_hubEliRemake.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Idk_hubEliRemake.ResetOnSpawn = false
+
 Frame.Parent = Idk_hubEliRemake
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
@@ -256,7 +290,7 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function DXTOW_fake_script() -- Main_2.Script 
+local function TKAZDX_fake_script() -- Main_2.Script 
 	local script = Instance.new('Script', Main_2)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -269,8 +303,8 @@ local function DXTOW_fake_script() -- Main_2.Script
 		tools.Visible = false
 	end)
 end
-coroutine.wrap(DXTOW_fake_script)()
-local function QUAK_fake_script() -- Teleports.Script 
+coroutine.wrap(TKAZDX_fake_script)()
+local function VYOACM_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -283,8 +317,8 @@ local function QUAK_fake_script() -- Teleports.Script
 		tools.Visible = false
 	end)
 end
-coroutine.wrap(QUAK_fake_script)()
-local function JNAMFX_fake_script() -- Tools.Script 
+coroutine.wrap(VYOACM_fake_script)()
+local function LGZIO_fake_script() -- Tools.Script 
 	local script = Instance.new('Script', Tools)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -297,8 +331,8 @@ local function JNAMFX_fake_script() -- Tools.Script
 		tools.Visible = true
 	end)
 end
-coroutine.wrap(JNAMFX_fake_script)()
-local function ASHCOW_fake_script() -- Nimbus.Script 
+coroutine.wrap(LGZIO_fake_script)()
+local function KEZZIQJ_fake_script() -- Nimbus.Script 
 	local script = Instance.new('Script', Nimbus)
 
 	
@@ -321,8 +355,8 @@ local function ASHCOW_fake_script() -- Nimbus.Script
 		end
 	end)
 end
-coroutine.wrap(ASHCOW_fake_script)()
-local function IHSWR_fake_script() -- DragonGb.Script 
+coroutine.wrap(KEZZIQJ_fake_script)()
+local function YJHFO_fake_script() -- DragonGb.Script 
 	local script = Instance.new('Script', DragonGb)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -354,8 +388,8 @@ local function IHSWR_fake_script() -- DragonGb.Script
 		end)
 	end)
 end
-coroutine.wrap(IHSWR_fake_script)()
-local function YRVN_fake_script() -- Noslow.Script 
+coroutine.wrap(YJHFO_fake_script)()
+local function QSORURS_fake_script() -- Noslow.Script 
 	local script = Instance.new('Script', Noslow)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -398,8 +432,8 @@ local function YRVN_fake_script() -- Noslow.Script
 	
 	end)
 end
-coroutine.wrap(YRVN_fake_script)()
-local function FTOO_fake_script() -- FB.Script 
+coroutine.wrap(QSORURS_fake_script)()
+local function MDRID_fake_script() -- FB.Script 
 	local script = Instance.new('Script', FB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -408,8 +442,8 @@ local function FTOO_fake_script() -- FB.Script
 		end)
 	end)
 end
-coroutine.wrap(FTOO_fake_script)()
-local function TBBA_fake_script() -- Toprespawn.Script 
+coroutine.wrap(MDRID_fake_script)()
+local function JQVUCR_fake_script() -- Toprespawn.Script 
 	local script = Instance.new('Script', Toprespawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -421,8 +455,8 @@ local function TBBA_fake_script() -- Toprespawn.Script
 		end
 	end)
 end
-coroutine.wrap(TBBA_fake_script)()
-local function OMOS_fake_script() -- Slotmenu.Script 
+coroutine.wrap(JQVUCR_fake_script)()
+local function FZMMNK_fake_script() -- Slotmenu.Script 
 	local script = Instance.new('Script', Slotmenu)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -433,8 +467,8 @@ local function OMOS_fake_script() -- Slotmenu.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(OMOS_fake_script)()
-local function BKLYW_fake_script() -- Majin.Script 
+coroutine.wrap(FZMMNK_fake_script)()
+local function MTKDUXK_fake_script() -- Majin.Script 
 	local script = Instance.new('Script', Majin)
 
 	_G.majin = false
@@ -451,16 +485,16 @@ local function BKLYW_fake_script() -- Majin.Script
 		end
 	end)
 end
-coroutine.wrap(BKLYW_fake_script)()
-local function MLMILKH_fake_script() -- TextButton.Script 
+coroutine.wrap(MTKDUXK_fake_script)()
+local function MLZC_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(MLMILKH_fake_script)()
-local function PAXWHW_fake_script() -- Frame.Script 
+coroutine.wrap(MLZC_fake_script)()
+local function WAUZP_fake_script() -- Frame.Script 
 	local script = Instance.new('Script', Frame)
 
 	local script = Instance.new('Script', Frame)
@@ -503,25 +537,504 @@ local function PAXWHW_fake_script() -- Frame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(PAXWHW_fake_script)()
-local function XNQARM_fake_script() -- Idk_hubEliRemake.Script 
+coroutine.wrap(WAUZP_fake_script)()
+local function CXRNVN_fake_script() -- Idk_hubEliRemake.Script 
 	local script = Instance.new('Script', Idk_hubEliRemake)
 
-	_G.on = true
+	local Title = script.Parent
 	
-	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-		if key == "p" then
-			if _G.on == true then
-			    _G.on = false
-				script.Parent.Enabled = false
-			end
-			if _G.on == false then
-			    _G.on = true
-				script.Parent.Enabled = true
-			end
-	
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+		if key == "p" and Title.Enabled == true then
+			Title.Enabled = false
+		elseif key == "p" and Title.Enabled == false then
+			Title.Enabled = true
 		end
 	end)
-	
 end
-coroutine.wrap(XNQARM_fake_script)()
+coroutine.wrap(CXRNVN_fake_script)()
+
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.354320973, 0, 0.282208592, 0)
+Frame.Size = UDim2.new(0, 455, 0, 339)
+
+Main.Name = "Main"
+Main.Parent = Frame
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.0281365514, 0, 0.0426619649, 0)
+Main.Size = UDim2.new(0, 429, 0, 310)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(42, 42, 42)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 429, 0, 35)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "Idk Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(0.52, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = TextLabel
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabs.BackgroundTransparency = 1.000
+Tabs.Size = UDim2.new(0, 88, 0, 310)
+
+Main_2.Name = "Main"
+Main_2.Parent = Tabs
+Main_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0.0139860138, 0, 0.112903222, 0)
+Main_2.Size = UDim2.new(0, 82, 0, 32)
+Main_2.Font = Enum.Font.Cartoon
+Main_2.Text = "Main"
+Main_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.TextScaled = true
+Main_2.TextSize = 14.000
+Main_2.TextWrapped = true
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Tabs
+Teleports.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0.0139860138, 0, 0.267741919, 0)
+Teleports.Size = UDim2.new(0, 82, 0, 32)
+Teleports.Font = Enum.Font.Cartoon
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextScaled = true
+Teleports.TextSize = 14.000
+Teleports.TextWrapped = true
+
+Tools.Name = "Tools"
+Tools.Parent = Tabs
+Tools.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Tools.BorderSizePixel = 0
+Tools.Position = UDim2.new(0.0139860138, 0, 0.429032266, 0)
+Tools.Size = UDim2.new(0, 82, 0, 32)
+Tools.Font = Enum.Font.Cartoon
+Tools.Text = "Tools"
+Tools.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tools.TextScaled = true
+Tools.TextSize = 14.000
+Tools.TextWrapped = true
+
+Tools_2.Name = "Tools"
+Tools_2.Parent = Main
+Tools_2.Active = true
+Tools_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools_2.BackgroundTransparency = 1.000
+Tools_2.Position = UDim2.new(0.205128208, 0, 0.112903222, 0)
+Tools_2.Size = UDim2.new(0, 341, 0, 275)
+Tools_2.Visible = false
+
+Nimbus.Name = "Nimbus"
+Nimbus.Parent = Tools_2
+Nimbus.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Nimbus.Position = UDim2.new(0.677419364, 0, 0.0282235853, 0)
+Nimbus.Size = UDim2.new(0, 95, 0, 41)
+Nimbus.Font = Enum.Font.Cartoon
+Nimbus.Text = "Nimbus"
+Nimbus.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nimbus.TextScaled = true
+Nimbus.TextSize = 14.000
+Nimbus.TextWrapped = true
+
+DragonGb.Name = "DragonGb"
+DragonGb.Parent = Tools_2
+DragonGb.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+DragonGb.Position = UDim2.new(0.351906151, 0, 0.0282235853, 0)
+DragonGb.Size = UDim2.new(0, 95, 0, 41)
+DragonGb.Font = Enum.Font.Cartoon
+DragonGb.Text = "Dragon grab"
+DragonGb.TextColor3 = Color3.fromRGB(255, 255, 255)
+DragonGb.TextScaled = true
+DragonGb.TextSize = 14.000
+DragonGb.TextWrapped = true
+
+Noslow.Name = "Noslow"
+Noslow.Parent = Tools_2
+Noslow.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Noslow.Position = UDim2.new(0.0234604143, 0, 0.0282235853, 0)
+Noslow.Size = UDim2.new(0, 95, 0, 41)
+Noslow.Font = Enum.Font.Cartoon
+Noslow.Text = "No slow"
+Noslow.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noslow.TextScaled = true
+Noslow.TextSize = 14.000
+Noslow.TextWrapped = true
+
+FB.Name = "FB"
+FB.Parent = Tools_2
+FB.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+FB.Position = UDim2.new(0.351906151, 0, 0.128223583, 0)
+FB.Size = UDim2.new(0, 95, 0, 41)
+FB.Font = Enum.Font.Cartoon
+FB.Text = "Full bright"
+FB.TextColor3 = Color3.fromRGB(255, 255, 255)
+FB.TextScaled = true
+FB.TextSize = 14.000
+FB.TextWrapped = true
+
+Toprespawn.Name = "Top respawn"
+Toprespawn.Parent = Tools_2
+Toprespawn.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Toprespawn.Position = UDim2.new(0.0234604143, 0, 0.128223583, 0)
+Toprespawn.Size = UDim2.new(0, 95, 0, 41)
+Toprespawn.Font = Enum.Font.Cartoon
+Toprespawn.Text = "Top respawn"
+Toprespawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toprespawn.TextScaled = true
+Toprespawn.TextSize = 14.000
+Toprespawn.TextWrapped = true
+
+Slotmenu.Name = "Slot menu"
+Slotmenu.Parent = Tools_2
+Slotmenu.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Slotmenu.Position = UDim2.new(0.677419364, 0, 0.128223583, 0)
+Slotmenu.Size = UDim2.new(0, 95, 0, 41)
+Slotmenu.Font = Enum.Font.Cartoon
+Slotmenu.Text = "Slot menu"
+Slotmenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+Slotmenu.TextScaled = true
+Slotmenu.TextSize = 14.000
+Slotmenu.TextWrapped = true
+
+Majin.Name = "Majin"
+Majin.Parent = Tools_2
+Majin.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Majin.Position = UDim2.new(0.149560109, 0, 0.211189002, 0)
+Majin.Size = UDim2.new(0, 201, 0, 41)
+Majin.Font = Enum.Font.Cartoon
+Majin.Text = "Majin keybind: n"
+Majin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Majin.TextScaled = true
+Majin.TextSize = 14.000
+Majin.TextWrapped = true
+
+Teleports_2.Name = "Teleports"
+Teleports_2.Parent = Main
+Teleports_2.Active = true
+Teleports_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleports_2.BackgroundTransparency = 1.000
+Teleports_2.Position = UDim2.new(0.205128208, 0, 0.112903222, 0)
+Teleports_2.Size = UDim2.new(0, 341, 0, 275)
+Teleports_2.Visible = false
+
+TextLabel_2.Parent = Teleports_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0739905387, 0, 0.0509958528, 0)
+TextLabel_2.Size = UDim2.new(0, 271, 0, 82)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "Teleports coming soon (im working on it)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+MainTabs.Name = "MainTabs"
+MainTabs.Parent = Main
+MainTabs.Active = true
+MainTabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTabs.BackgroundTransparency = 1.000
+MainTabs.Position = UDim2.new(0.205128208, 0, 0.112903222, 0)
+MainTabs.Size = UDim2.new(0, 341, 0, 275)
+
+TextLabel_3.Parent = MainTabs
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0739905387, 0, 0.0509958528, 0)
+TextLabel_3.Size = UDim2.new(0, 271, 0, 82)
+TextLabel_3.Font = Enum.Font.Cartoon
+TextLabel_3.Text = "Thanks for using idk hub it was created by BounceOutEli"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextButton.Parent = MainTabs
+TextButton.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextButton.Position = UDim2.new(0.190615848, 0, 0.194897339, 0)
+TextButton.Size = UDim2.new(0, 191, 0, 34)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "Destroy gui"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function TKAZDX_fake_script() -- Main_2.Script 
+	local script = Instance.new('Script', Main_2)
+
+	local main = script.Parent.Parent.Parent.MainTabs
+	local tps = script.Parent.Parent.Parent.Teleports
+	local tools = script.Parent.Parent.Parent.Tools
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Visible = true
+		tps.Visible = false
+		tools.Visible = false
+	end)
+end
+coroutine.wrap(TKAZDX_fake_script)()
+local function VYOACM_fake_script() -- Teleports.Script 
+	local script = Instance.new('Script', Teleports)
+
+	local main = script.Parent.Parent.Parent.MainTabs
+	local tps = script.Parent.Parent.Parent.Teleports
+	local tools = script.Parent.Parent.Parent.Tools
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Visible = false
+		tps.Visible = true
+		tools.Visible = false
+	end)
+end
+coroutine.wrap(VYOACM_fake_script)()
+local function LGZIO_fake_script() -- Tools.Script 
+	local script = Instance.new('Script', Tools)
+
+	local main = script.Parent.Parent.Parent.MainTabs
+	local tps = script.Parent.Parent.Parent.Teleports
+	local tools = script.Parent.Parent.Parent.Tools
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Visible = false
+		tps.Visible = false
+		tools.Visible = true
+	end)
+end
+coroutine.wrap(LGZIO_fake_script)()
+local function KEZZIQJ_fake_script() -- Nimbus.Script 
+	local script = Instance.new('Script', Nimbus)
+
+	
+	_G.nimb = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.nimb == false then
+			_G.nimb = true
+			local Nimbus = Instance.new("Part")
+			
+			script.Parent.Text = 'Nimbus: on'
+			
+			Nimbus.Name = "Nimbus"
+			Nimbus.Parent = game.Players.LocalPlayer.Character
+			Nimbus.Transparency = 1
+			Nimbus.CanCollide = false
+		elseif _G.nimb == true then
+			_G.nimb = false
+			script.Parent.Text = 'Nimbus: off'
+			game.Players.LocalPlayer.Character.Nimbus:Destroy()
+		end
+	end)
+end
+coroutine.wrap(KEZZIQJ_fake_script)()
+local function YJHFO_fake_script() -- DragonGb.Script 
+	local script = Instance.new('Script', DragonGb)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game:GetService("Players").LocalPlayer
+		local mouse = plr:GetMouse()
+		local dcrush = game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Crush")
+		local dthrow = game.Players.LocalPlayer.Backpack:FindFirstChild("Dragon Throw")
+	
+		mouse.KeyDown:connect(function(key)
+			if dcrush then
+				if key == "[" then
+					game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Crush"])
+					game.Players.LocalPlayer.Character["Dragon Crush"]:Activate()
+					wait(0.1)
+					game.Workspace.Live[plr.Name]["Dragon Crush"].Activator["Flip"]:Destroy()
+				elseif key == "]" then
+					game.Players.LocalPlayer.Character.Head:Destroy()
+				end
+			elseif dthrow then
+				if key == "[" then
+					game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack["Dragon Throw"])
+					game.Players.LocalPlayer.Character["Dragon Throw"]:Activate()
+					wait(0.1)
+					game.Workspace.Live[plr.Name]["Dragon Throw"].Activator["Flip"]:Destroy()
+				elseif key == "]" then
+					game.Players.LocalPlayer.Character.Head:Destroy()
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(YJHFO_fake_script)()
+local function QSORURS_fake_script() -- Noslow.Script 
+	local script = Instance.new('Script', Noslow)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait()
+			if game.Players.LocalPlayer.Character:FindFirstChild("Action") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Action"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Attacking") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Attacking"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Using") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Using"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("hyper") then
+				game.Players.LocalPlayer.Character:FindFirstChild("hyper"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Hyper") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Hyper"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("heavy") then
+				game.Players.LocalPlayer.Character:FindFirstChild("heavy"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("KiBlasted") then
+				game.Players.LocalPlayer.Character:FindFirstChild("KiBlasted"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Tele") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Tele"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("tele") then
+				game.Players.LocalPlayer.Character:FindFirstChild("tele"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Killed") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Killed"):Destroy()
+			end
+			if game.Players.LocalPlayer.Character:FindFirstChild("Slow") then
+				game.Players.LocalPlayer.Character:FindFirstChild("Slow"):Destroy()
+			end
+		end
+	
+	end)
+end
+coroutine.wrap(QSORURS_fake_script)()
+local function MDRID_fake_script() -- FB.Script 
+	local script = Instance.new('Script', FB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		FB = game:GetService("RunService").RenderStepped:Connect(function()
+			game.Lighting.FogEnd = (99999999)
+		end)
+	end)
+end
+coroutine.wrap(MDRID_fake_script)()
+local function JQVUCR_fake_script() -- Toprespawn.Script 
+	local script = Instance.new('Script', Toprespawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait(0.05)
+			if game.Players.LocalPlayer.Character:FindFirstChild("SuperAction") then
+				game.Players.LocalPlayer.Character:FindFirstChild("SuperAction"):Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(JQVUCR_fake_script)()
+local function FZMMNK_fake_script() -- Slotmenu.Script 
+	local script = Instance.new('Script', Slotmenu)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Backpack.ServerTraits.ChatStart:FireServer(game.Workspace.FriendlyNPCs["Character Slot Changer"])
+		wait(.4)
+		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "Yes"})
+		wait(.4)
+		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
+	end)
+end
+coroutine.wrap(FZMMNK_fake_script)()
+local function MTKDUXK_fake_script() -- Majin.Script 
+	local script = Instance.new('Script', Majin)
+
+	_G.majin = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.majin == true then
+			_G.majin = false
+		elseif _G.majin == false then
+			_G.majin = true
+			game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+				if key == "n" then
+					game.Players.LocalPlayer.Backpack.ServerTraits.FakeChat:FireServer("majin!")
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(MTKDUXK_fake_script)()
+local function MLZC_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(MLZC_fake_script)()
+local function WAUZP_fake_script() -- Frame.Script 
+	local script = Instance.new('Script', Frame)
+
+	local script = Instance.new('Script', Frame)
+	
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(WAUZP_fake_script)()
+local function CXRNVN_fake_script() -- Idk_hubEliRemake.Script 
+	local script = Instance.new('Script', Idk_hubEliRemake)
+
+	local Title = script.Parent
+	
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+		if key == "p" and Title.Enabled == true then
+			Title.Enabled = false
+		elseif key == "p" and Title.Enabled == false then
+			Title.Enabled = true
+		end
+	end)
+end
+coroutine.wrap(CXRNVN_fake_script)()
