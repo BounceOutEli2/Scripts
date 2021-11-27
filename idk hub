@@ -426,7 +426,7 @@ TextLabel_6.TextWrapped = true
 
 -- Scripts:
 
-local function LRHS_fake_script() -- Main_2.Script 
+local function JDOWKEX_fake_script() -- Main_2.Script 
 	local script = Instance.new('Script', Main_2)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -441,8 +441,8 @@ local function LRHS_fake_script() -- Main_2.Script
 		updates.Visible = false
 	end)
 end
-coroutine.wrap(LRHS_fake_script)()
-local function VLZNK_fake_script() -- Teleports.Script 
+coroutine.wrap(JDOWKEX_fake_script)()
+local function TEKR_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -457,8 +457,8 @@ local function VLZNK_fake_script() -- Teleports.Script
 		updates.Visible = false
 	end)
 end
-coroutine.wrap(VLZNK_fake_script)()
-local function YFZEGTW_fake_script() -- Tools.Script 
+coroutine.wrap(TEKR_fake_script)()
+local function CAJRCMT_fake_script() -- Tools.Script 
 	local script = Instance.new('Script', Tools)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -473,8 +473,8 @@ local function YFZEGTW_fake_script() -- Tools.Script
 		updates.Visible = false
 	end)
 end
-coroutine.wrap(YFZEGTW_fake_script)()
-local function OCKGLZE_fake_script() -- upds.Script 
+coroutine.wrap(CAJRCMT_fake_script)()
+local function OCBEKYO_fake_script() -- upds.Script 
 	local script = Instance.new('Script', upds)
 
 	local main = script.Parent.Parent.Parent.MainTabs
@@ -489,8 +489,8 @@ local function OCKGLZE_fake_script() -- upds.Script
 		updates.Visible = true
 	end)
 end
-coroutine.wrap(OCKGLZE_fake_script)()
-local function ZZHCV_fake_script() -- Nimbus.Script 
+coroutine.wrap(OCBEKYO_fake_script)()
+local function BQIB_fake_script() -- Nimbus.Script 
 	local script = Instance.new('Script', Nimbus)
 
 	
@@ -513,8 +513,8 @@ local function ZZHCV_fake_script() -- Nimbus.Script
 		end
 	end)
 end
-coroutine.wrap(ZZHCV_fake_script)()
-local function EMYGY_fake_script() -- Noslow.Script 
+coroutine.wrap(BQIB_fake_script)()
+local function NNNK_fake_script() -- Noslow.Script 
 	local script = Instance.new('Script', Noslow)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -557,8 +557,8 @@ local function EMYGY_fake_script() -- Noslow.Script
 	
 	end)
 end
-coroutine.wrap(EMYGY_fake_script)()
-local function FMTNYY_fake_script() -- FB.Script 
+coroutine.wrap(NNNK_fake_script)()
+local function LZJMUQ_fake_script() -- FB.Script 
 	local script = Instance.new('Script', FB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -567,8 +567,8 @@ local function FMTNYY_fake_script() -- FB.Script
 		end)
 	end)
 end
-coroutine.wrap(FMTNYY_fake_script)()
-local function TZQZWV_fake_script() -- Toprespawn.Script 
+coroutine.wrap(LZJMUQ_fake_script)()
+local function LMLPRTV_fake_script() -- Toprespawn.Script 
 	local script = Instance.new('Script', Toprespawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -580,8 +580,8 @@ local function TZQZWV_fake_script() -- Toprespawn.Script
 		end
 	end)
 end
-coroutine.wrap(TZQZWV_fake_script)()
-local function FFDXZ_fake_script() -- Slotmenu.Script 
+coroutine.wrap(LMLPRTV_fake_script)()
+local function SPRDNR_fake_script() -- Slotmenu.Script 
 	local script = Instance.new('Script', Slotmenu)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -592,8 +592,8 @@ local function FFDXZ_fake_script() -- Slotmenu.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(FFDXZ_fake_script)()
-local function JMLQ_fake_script() -- Majin.Script 
+coroutine.wrap(SPRDNR_fake_script)()
+local function BBEG_fake_script() -- Majin.Script 
 	local script = Instance.new('Script', Majin)
 
 	_G.majin = false
@@ -610,8 +610,8 @@ local function JMLQ_fake_script() -- Majin.Script
 		end
 	end)
 end
-coroutine.wrap(JMLQ_fake_script)()
-local function PYMHK_fake_script() -- DragonGb.Script 
+coroutine.wrap(BBEG_fake_script)()
+local function HKBVIZJ_fake_script() -- DragonGb.Script 
 	local script = Instance.new('Script', DragonGb)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -643,8 +643,8 @@ local function PYMHK_fake_script() -- DragonGb.Script
 		end)
 	end)
 end
-coroutine.wrap(PYMHK_fake_script)()
-local function UTEMNTU_fake_script() -- SouthCty.Script 
+coroutine.wrap(HKBVIZJ_fake_script)()
+local function VQDGMW_fake_script() -- SouthCty.Script 
 	local script = Instance.new('Script', SouthCty)
 
 	
@@ -655,8 +655,8 @@ local function UTEMNTU_fake_script() -- SouthCty.Script
 		}):Play()
 	end)
 end
-coroutine.wrap(UTEMNTU_fake_script)()
-local function QTWKZ_fake_script() -- NamekSS.Script 
+coroutine.wrap(VQDGMW_fake_script)()
+local function BAEX_fake_script() -- NamekSS.Script 
 	local script = Instance.new('Script', NamekSS)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -665,8 +665,8 @@ local function QTWKZ_fake_script() -- NamekSS.Script
 		}):Play()
 	end)
 end
-coroutine.wrap(QTWKZ_fake_script)()
-local function JUQH_fake_script() -- Namekship.Script 
+coroutine.wrap(BAEX_fake_script)()
+local function VBSFXT_fake_script() -- Namekship.Script 
 	local script = Instance.new('Script', Namekship)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -677,8 +677,8 @@ local function JUQH_fake_script() -- Namekship.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(JUQH_fake_script)()
-local function RABJPOD_fake_script() -- Space.Script 
+coroutine.wrap(VBSFXT_fake_script)()
+local function PWFO_fake_script() -- Space.Script 
 	local script = Instance.new('Script', Space)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -689,8 +689,8 @@ local function RABJPOD_fake_script() -- Space.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(RABJPOD_fake_script)()
-local function LFBWGFR_fake_script() -- CentralCity.Script 
+coroutine.wrap(PWFO_fake_script)()
+local function CIDGCTQ_fake_script() -- CentralCity.Script 
 	local script = Instance.new('Script', CentralCity)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -699,8 +699,8 @@ local function LFBWGFR_fake_script() -- CentralCity.Script
 		}):Play()
 	end)
 end
-coroutine.wrap(LFBWGFR_fake_script)()
-local function AZSMYNZ_fake_script() -- Future.Script 
+coroutine.wrap(CIDGCTQ_fake_script)()
+local function LDIDJQY_fake_script() -- Future.Script 
 	local script = Instance.new('Script', Future)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -711,18 +711,18 @@ local function AZSMYNZ_fake_script() -- Future.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(AZSMYNZ_fake_script)()
-local function YKGZPCF_fake_script() -- West.Script 
+coroutine.wrap(LDIDJQY_fake_script)()
+local function HLKJB_fake_script() -- West.Script 
 	local script = Instance.new('Script', West)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(3, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut), {
-			CFrame = game.Workspace.FriendlyNPCs["Korin BEANS"].Head.CFrame * CFrame.new(0, 0, 4)
+			CFrame = game.Workspace.FriendlyNPCs["Future Trunks"].HumanoidRootPart.CFrame * CFrame.new(0, 0, 3)
 		}):Play()
 	end)
 end
-coroutine.wrap(YKGZPCF_fake_script)()
-local function EPSO_fake_script() -- CentralCity_2.Script 
+coroutine.wrap(HLKJB_fake_script)()
+local function PSMR_fake_script() -- CentralCity_2.Script 
 	local script = Instance.new('Script', CentralCity_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -731,16 +731,16 @@ local function EPSO_fake_script() -- CentralCity_2.Script
 		}):Play()
 	end)
 end
-coroutine.wrap(EPSO_fake_script)()
-local function KGKTW_fake_script() -- TextButton.Script 
+coroutine.wrap(PSMR_fake_script)()
+local function LEDASRM_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(KGKTW_fake_script)()
-local function SCKYJS_fake_script() -- Frame.Script 
+coroutine.wrap(LEDASRM_fake_script)()
+local function ECWZG_fake_script() -- Frame.Script 
 	local script = Instance.new('Script', Frame)
 
 	local script = Instance.new('Script', Frame)
@@ -783,8 +783,8 @@ local function SCKYJS_fake_script() -- Frame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(SCKYJS_fake_script)()
-local function BBGT_fake_script() -- Idk_hubEliRemake.Script 
+coroutine.wrap(ECWZG_fake_script)()
+local function YNUUHY_fake_script() -- Idk_hubEliRemake.Script 
 	local script = Instance.new('Script', Idk_hubEliRemake)
 
 	local Title = script.Parent
@@ -797,4 +797,4 @@ local function BBGT_fake_script() -- Idk_hubEliRemake.Script
 		end
 	end)
 end
-coroutine.wrap(BBGT_fake_script)()
+coroutine.wrap(YNUUHY_fake_script)()
