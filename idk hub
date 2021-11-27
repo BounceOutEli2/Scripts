@@ -12,6 +12,7 @@ local Tabs = Instance.new("Frame")
 local Main_2 = Instance.new("TextButton")
 local Teleports = Instance.new("TextButton")
 local Tools = Instance.new("TextButton")
+local upds = Instance.new("TextButton")
 local Tools_2 = Instance.new("ScrollingFrame")
 local Nimbus = Instance.new("TextButton")
 local DragonGb = Instance.new("TextButton")
@@ -26,6 +27,10 @@ local MainTabs = Instance.new("ScrollingFrame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local Updates = Instance.new("ScrollingFrame")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -109,6 +114,19 @@ Tools.TextColor3 = Color3.fromRGB(255, 255, 255)
 Tools.TextScaled = true
 Tools.TextSize = 14.000
 Tools.TextWrapped = true
+
+upds.Name = "upds"
+upds.Parent = Tabs
+upds.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+upds.BorderSizePixel = 0
+upds.Position = UDim2.new(0.0139860138, 0, 0.580645204, 0)
+upds.Size = UDim2.new(0, 82, 0, 32)
+upds.Font = Enum.Font.Cartoon
+upds.Text = "Updates"
+upds.TextColor3 = Color3.fromRGB(255, 255, 255)
+upds.TextScaled = true
+upds.TextSize = 14.000
+upds.TextWrapped = true
 
 Tools_2.Name = "Tools"
 Tools_2.Parent = Main
@@ -267,51 +285,121 @@ TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
+Updates.Name = "Updates"
+Updates.Parent = Main
+Updates.Active = true
+Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updates.BackgroundTransparency = 1.000
+Updates.Position = UDim2.new(0.205128208, 0, 0.112903222, 0)
+Updates.Size = UDim2.new(0, 341, 0, 275)
+Updates.Visible = false
+Updates.CanvasPosition = Vector2.new(0, 4.5090909)
+
+TextLabel_5.Parent = Updates
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.00654186122, 0, 0.0568621717, 0)
+TextLabel_5.Size = UDim2.new(0, 326, 0, 209)
+TextLabel_5.Font = Enum.Font.Cartoon
+TextLabel_5.Text = "Version 1.1 update logs-																						-Added Update logs																																-Started working on Teleports						-Fixed ui drag"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 25.000
+TextLabel_5.TextWrapped = true
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_6.Parent = Updates
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.129709005, 0, 0.00577391498, 0)
+TextLabel_6.Size = UDim2.new(0, 164, 0, 32)
+TextLabel_6.Font = Enum.Font.Cartoon
+TextLabel_6.Text = "=--UPDATES--="
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel_6.TextSize = 25.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_6.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0290612876, 0, 0.889921546, 0)
+TextLabel_7.Size = UDim2.new(0, 64, 0, 22)
+TextLabel_7.Font = Enum.Font.Cartoon
+TextLabel_7.Text = "V 1.1"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
 -- Scripts:
 
-local function YKPMI_fake_script() -- Main_2.Script 
+local function CBFKOYK_fake_script() -- Main_2.Script 
 	local script = Instance.new('Script', Main_2)
 
 	local main = script.Parent.Parent.Parent.MainTabs
 	local tps = script.Parent.Parent.Parent.Teleports
 	local tools = script.Parent.Parent.Parent.Tools
+	local updates = script.Parent.Parent.Parent.Updates
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		main.Visible = true
 		tps.Visible = false
 		tools.Visible = false
+		updates.Visible = false
 	end)
 end
-coroutine.wrap(YKPMI_fake_script)()
-local function MYSK_fake_script() -- Teleports.Script 
+coroutine.wrap(CBFKOYK_fake_script)()
+local function YPHTSTX_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	local main = script.Parent.Parent.Parent.MainTabs
 	local tps = script.Parent.Parent.Parent.Teleports
 	local tools = script.Parent.Parent.Parent.Tools
+	local updates = script.Parent.Parent.Parent.Updates
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		main.Visible = false
 		tps.Visible = true
 		tools.Visible = false
+		updates.Visible = false
 	end)
 end
-coroutine.wrap(MYSK_fake_script)()
-local function JYFYFG_fake_script() -- Tools.Script 
+coroutine.wrap(YPHTSTX_fake_script)()
+local function HOLLT_fake_script() -- Tools.Script 
 	local script = Instance.new('Script', Tools)
 
 	local main = script.Parent.Parent.Parent.MainTabs
 	local tps = script.Parent.Parent.Parent.Teleports
 	local tools = script.Parent.Parent.Parent.Tools
+	local updates = script.Parent.Parent.Parent.Updates
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		main.Visible = false
 		tps.Visible = false
 		tools.Visible = true
+		updates.Visible = false
 	end)
 end
-coroutine.wrap(JYFYFG_fake_script)()
-local function SJXOAPV_fake_script() -- Nimbus.Script 
+coroutine.wrap(HOLLT_fake_script)()
+local function EGKNUC_fake_script() -- upds.Script 
+	local script = Instance.new('Script', upds)
+
+	local main = script.Parent.Parent.Parent.MainTabs
+	local tps = script.Parent.Parent.Parent.Teleports
+	local tools = script.Parent.Parent.Parent.Tools
+	local updates = script.Parent.Parent.Parent.Updates
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		main.Visible = false
+		tps.Visible = false
+		tools.Visible = false
+		updates.Visible = true
+	end)
+end
+coroutine.wrap(EGKNUC_fake_script)()
+local function JPJVCN_fake_script() -- Nimbus.Script 
 	local script = Instance.new('Script', Nimbus)
 
 	
@@ -334,8 +422,8 @@ local function SJXOAPV_fake_script() -- Nimbus.Script
 		end
 	end)
 end
-coroutine.wrap(SJXOAPV_fake_script)()
-local function IMPEE_fake_script() -- DragonGb.Script 
+coroutine.wrap(JPJVCN_fake_script)()
+local function BSGCJV_fake_script() -- DragonGb.Script 
 	local script = Instance.new('Script', DragonGb)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -367,8 +455,8 @@ local function IMPEE_fake_script() -- DragonGb.Script
 		end)
 	end)
 end
-coroutine.wrap(IMPEE_fake_script)()
-local function LNXG_fake_script() -- Noslow.Script 
+coroutine.wrap(BSGCJV_fake_script)()
+local function VUDN_fake_script() -- Noslow.Script 
 	local script = Instance.new('Script', Noslow)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -411,8 +499,8 @@ local function LNXG_fake_script() -- Noslow.Script
 	
 	end)
 end
-coroutine.wrap(LNXG_fake_script)()
-local function HXTZLE_fake_script() -- FB.Script 
+coroutine.wrap(VUDN_fake_script)()
+local function OEZUK_fake_script() -- FB.Script 
 	local script = Instance.new('Script', FB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -421,8 +509,8 @@ local function HXTZLE_fake_script() -- FB.Script
 		end)
 	end)
 end
-coroutine.wrap(HXTZLE_fake_script)()
-local function MDII_fake_script() -- Toprespawn.Script 
+coroutine.wrap(OEZUK_fake_script)()
+local function PTIFP_fake_script() -- Toprespawn.Script 
 	local script = Instance.new('Script', Toprespawn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -434,8 +522,8 @@ local function MDII_fake_script() -- Toprespawn.Script
 		end
 	end)
 end
-coroutine.wrap(MDII_fake_script)()
-local function BEXB_fake_script() -- Slotmenu.Script 
+coroutine.wrap(PTIFP_fake_script)()
+local function PNRCLEZ_fake_script() -- Slotmenu.Script 
 	local script = Instance.new('Script', Slotmenu)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -446,8 +534,8 @@ local function BEXB_fake_script() -- Slotmenu.Script
 		game.Players.LocalPlayer.Backpack.ServerTraits.ChatAdvance:FireServer({[1] = "k"})
 	end)
 end
-coroutine.wrap(BEXB_fake_script)()
-local function FVJK_fake_script() -- Majin.Script 
+coroutine.wrap(PNRCLEZ_fake_script)()
+local function ISKWSBA_fake_script() -- Majin.Script 
 	local script = Instance.new('Script', Majin)
 
 	_G.majin = false
@@ -464,16 +552,16 @@ local function FVJK_fake_script() -- Majin.Script
 		end
 	end)
 end
-coroutine.wrap(FVJK_fake_script)()
-local function TRJHOXZ_fake_script() -- TextButton.Script 
+coroutine.wrap(ISKWSBA_fake_script)()
+local function GCRBXB_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(TRJHOXZ_fake_script)()
-local function LRUJJ_fake_script() -- Frame.Script 
+coroutine.wrap(GCRBXB_fake_script)()
+local function EAEVIVW_fake_script() -- Frame.Script 
 	local script = Instance.new('Script', Frame)
 
 	local script = Instance.new('Script', Frame)
@@ -516,8 +604,8 @@ local function LRUJJ_fake_script() -- Frame.Script
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(LRUJJ_fake_script)()
-local function IYMHLR_fake_script() -- Idk_hubEliRemake.Script 
+coroutine.wrap(EAEVIVW_fake_script)()
+local function NQXXWXX_fake_script() -- Idk_hubEliRemake.Script 
 	local script = Instance.new('Script', Idk_hubEliRemake)
 
 	local Title = script.Parent
@@ -530,4 +618,4 @@ local function IYMHLR_fake_script() -- Idk_hubEliRemake.Script
 		end
 	end)
 end
-coroutine.wrap(IYMHLR_fake_script)()
+coroutine.wrap(NQXXWXX_fake_script)()
