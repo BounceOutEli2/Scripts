@@ -44,3 +44,44 @@
 143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\
 143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\143\253\
 ]]
+
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+
+local list = {
+537123617,
+1318525147,
+143035819,
+8246874626,
+}
+
+local player = game.Players.LocalPlayer
+
+if table.find(list,player.UserId) then
+
+        wait(3)
+            if game.PlaceId == 8246874626 then
+            loadstring(game:HttpGet(("https://raw.githubusercontent.com/BounceOutEli2/Scripts/main/dbzDemo"),true))()
+            local notif = Notification.new("success", "Whitelisted", "executing")
+            notif:deleteTimeout(3)
+                else
+        local notif = Notification.new("error", "Not whitelisted", "please wait until your whitelisted")
+        notif:deleteTimeout(3)
+        end
+        if game.PlaceId == 2809202155 then
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/BounceOutEli2/Scripts/main/new_yba_gui.lua"),true))()
+        local notif = Notification.new("success", "Whitelisted", "executing")
+        notif:deleteTimeout(3)
+            else
+        local notif = Notification.new("error", "Not whitelisted", "please wait until your whitelisted")
+        notif:deleteTimeout(3)
+        
+        end
+        
+        if game.PlaceId == 914010731 then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/BounceOutEli2/Scripts/main/ro%20ghoul.lua", true))()
+            else
+        local notif = Notification.new("error", "Not whitelisted", "please wait until your whitelisted")
+        notif:deleteTimeout(3)
+        end
+        
+end
